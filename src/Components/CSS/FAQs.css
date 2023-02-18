@@ -1,0 +1,125 @@
+
+.FAQs-page {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    margin : 35px 0px 35px 0px;
+}
+.FAQs-h1{
+    color: #fff;
+    padding:35px 0px 35px 0px;
+}
+.FAqs-sec {
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1A1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.FAQs-contanier {
+    width: 100%;
+    max-width: 73rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+.FAQs-accordion{
+    color: #C3073F;
+    margin: 10px 10px 10px 10px;
+}
+
+.FAQs-accordion-item {
+    background-color: #1A1A1D;;
+    border-radius: .1rem;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+    border: 2px solid #C3073F;
+}
+
+.FAQs-accordion-link {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1A1A1D;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    margin: 10px 10px 10px 10px;
+}
+.FAQs-accordion-link:hover{
+color: #45A29E;
+text-decoration: none;
+}
+.FAQs-accordion-link .ic {
+    color: #e7d5ff;
+    padding: .5ren;
+}
+
+.FAQs-accordion-link .ii {
+    display: none;
+}
+
+.FAQs-answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #1A1A1D;;
+    transition: max-height 650ms;
+}
+
+.FAQs-answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #C3073F;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.FAQs-answer p {
+    color: #45A29E;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.FAQs-accordion-item:target .FAQs-answer {
+    max-height: 20rem;
+}
+
+.FAQs-accordion-item:target .FAQs-accordion-link .ii2 {
+    display: none;
+}
+
+.FAQs-accordion-item:target .FAQs-accordion-link .ii {
+    display: block;
+} 
+
+
+@media(max-width:1250px){
+
+}
+
+
+@media(max-width:1100px){
+    .FAQs-accordion-item {
+        background-color: #1A1A1D;;
+        border-radius: .1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        width: 90%;
+        padding: 1.6rem;
+        border: 2px solid #C3073F;
+    }
+}
+   
+@media(max-width:550px){
+
+
+}

@@ -1,0 +1,133 @@
+
+.footer-bo {
+    background-color: #1A1A1D;
+    border-top: 3px solid #C3073F;
+}
+
+.foot {
+    border: #C3073F;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #1A1A1D;
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 1vh 0vw 0vh 0vw;
+}
+
+.footer-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex-basis: 25%;
+    padding: 10px;
+    color: #C3073F;
+}
+.footer-col p{
+    color: #45A29E;
+}
+.footer-col:nth-child(2) .footer-col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+.footer-office{
+    color:#C3073F;
+}
+.footer-office-col {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer-ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fo {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.fo .fas {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.fo input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.fo button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.fo button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    color: #45A29E;
+}
+
+@media(max-width: 700px) {
+    .foot {
+        bottom: unset;
+    }
+    .footer-col {
+        flex-basis: 100%;
+    }
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}

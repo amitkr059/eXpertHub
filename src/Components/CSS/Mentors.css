@@ -1,0 +1,89 @@
+
+.mentor-body
+{
+   justify-content: center;
+   align-items: center;
+   background: #0B0C10;
+   margin: 25px 0px 0px 0px;
+}
+.mentors-h2{
+   color: #ecdddd;
+   font-size: 1.9rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+    padding-top: 15px;
+}
+.mentor-container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.mentor-card:hover{
+   border: 4px solid #C3073F;
+}
+.mentor-container .mentor-card
+{
+   width: 330px;
+   height: 460px;
+   padding: 60px 30px;
+   margin: 20px;
+   background: #1A1A1D;
+   border: 2px solid #C3073F;
+   border-radius: 1px;
+}
+
+
+.mentor-container .mentor-card .mentor-content
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.mentor-container .mentor-card .mentor-content .imgBx
+{
+   width: 170px;
+   height: 170px;
+   border-radius: 100%;
+   margin-bottom: 20px;
+   overflow: hidden;
+   border: 2px solid #C3073F;
+}
+.mentor-img{
+   width: 180px;
+   height: 180px;
+   border-radius: 100%;
+   margin-bottom: 20px;
+
+}
+.mentor-container .mentor-card .mentor-content .mentor-contentBx h4
+{
+   color: #C3073F;
+   font-size: 1.3rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+}
+.mentor-container .mentor-card .mentor-content .mentor-contentBx h5
+{
+   color: #45A29E;
+   font-size: 1rem;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 16px;
+
+}
+.mentor-container .mentor-card .mentor-content .sci
+{
+   margin-top: 10px;
+}
+.font-style-mentor{
+   margin-bottom: 20px;
+   font-size: 12px;
+   font-display: auto;
+   color: rgb(230, 215, 215);
+}

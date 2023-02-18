@@ -1,0 +1,141 @@
+
+.navbar{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #0B0C10;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0px 0 100px;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #C3073F;
+              
+}
+.logoimg1{
+  height: 70px;
+  padding-top: 5px;
+  margin: 4vh 0vw 0vh 0vw;
+}
+.logoimg2{
+  height: 32px;
+  margin-top: 27px;
+  margin-bottom: 9px;
+
+}
+.navbar .logo{
+  color:#C3073F;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+}
+.navbar ul{
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  float: right;
+  margin-right: 15px;
+}
+.navbar ul li{
+  margin: 0 5px;
+  display: inline-block;
+  
+}
+.navbar ul li a{
+  color: #ffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.navbar ul li a.active,
+.navbar ul button:hover{
+  color: #fff;
+  background: #C3073F;
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  color: #fff;
+  background: #C3073F;
+  text-decoration: none;
+}
+
+.navbar .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+  float: right;
+}
+@media (max-width: 942px){
+  .navbar{
+    padding: 0 40px 0 50px;
+    
+  }
+}
+@media (max-width: 920px){
+  .navbar{
+    padding: 0 30px 0 40px;
+    
+  }
+}
+@media (max-width: 900px){
+  .navbar{
+    padding: 0 20px 0 30px;
+    
+  }
+}
+@media (max-width: 930px) {
+  .navbar .menu-btn i{
+    display: block;
+    float: right;
+   
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  .navbar ul{
+    position: absolute;
+      top: 90px;
+    left: -100%;
+    background-color: #111;
+    width: 94%;
+    text-align: center;
+    margin: 0% 2% 0% 2%;
+    display: block;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    border: 1px solid red
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  .navbar ul li{
+    width: 100%;
+    margin: 25px 0;
+  }
+  .navbar ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 15px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  .navbar ul li a.active,
+  .navbar ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
